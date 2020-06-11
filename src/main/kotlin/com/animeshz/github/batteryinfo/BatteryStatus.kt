@@ -45,7 +45,7 @@ enum class BatteryFlow {
 /**
  * Performs blocking request into IO dispatcher to get [BatteryStatus] from low-level API
  */
-suspend fun getBatteryState(): BatteryStatus? {
+suspend fun getBatteryStatus(): BatteryStatus? {
     return withContext(Dispatchers.IO) {
         val batteryState = SYSTEM_BATTERY_STATE()
         val retrieveValue = PowrProf.CallNtPowerInformation(

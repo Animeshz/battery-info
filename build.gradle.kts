@@ -8,12 +8,14 @@ version = "0.1"
 repositories {
     maven("https://dl.bintray.com/kotlin/kotlin-eap")
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5")
     implementation("net.java.dev.jna:jna:5.5.0")
+    implementation("com.github.Animeshz:os-detector:-SNAPSHOT")
 
     testImplementation("io.mockk:mockk:1.10.0")
 }
